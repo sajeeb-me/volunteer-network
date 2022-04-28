@@ -51,15 +51,15 @@ function App() {
 export default App;
 
 /* 
-https: //i.ibb.co/GVRMsTd/bird-House.png
+
 https: //i.ibb.co/F67L0Mq/clearn-Park.png
-https: //i.ibb.co/CnpDH4d/drive-Safety.png
+
 https: //i.ibb.co/Fggb7kn/extra-Volunteer.png
 https: //i.ibb.co/s69v9hk/ITHelp.png
-https: //i.ibb.co/KsH12YF/library-Books.png
+
 https: //i.ibb.co/vhz7SwH/music-Lessons.png
 https: //i.ibb.co/k101pmk/school-Suffiles.png
-https: //i.ibb.co/7SKzPNY/study-Group.png
+
 https: //i.ibb.co/Nrdxw28/stuffed-Animals.png
 https: //i.ibb.co/QcjmsRK/vote-Register.png
 https: //i.ibb.co/dsv2dNw/animal-Shelter.png

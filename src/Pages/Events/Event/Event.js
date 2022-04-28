@@ -6,7 +6,7 @@ const Event = ({ getEvent, handleCancel }) => {
 
     return (
         <div>
-            <section className='w-[500px] bg-slate-200 flex gap-5 p-5 rounded-lg'>
+            <section className='w-[500px] bg-slate-200 flex items-center gap-5 p-5 rounded-lg'>
                 <div className='w-[200px]'>
                     <img className='w-full' src={img} alt="" />
                 </div>
