@@ -24,7 +24,11 @@ function App() {
             <Donation />
           </RequireAuth>
         } />
-        <Route path='/events' element={<Events />} />
+        <Route path='/events' element={
+          <RequireAuth>
+            <Events />
+          </RequireAuth>
+        } />
         <Route path='/blog' element={<Blog />} />
         <Route path='/login' element={<Login />} />
         <Route path='/register/:id' element={
