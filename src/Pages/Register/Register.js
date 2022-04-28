@@ -13,7 +13,7 @@ const Register = () => {
     const [activity, setActivity] = useState({})
     useEffect(() => {
         (async () => {
-            const { data } = await axios.get(`http://localhost:5000/activities/${id}`)
+            const { data } = await axios.get(`https://polar-taiga-58626.herokuapp.com/activities/${id}`)
             setActivity(data)
         })()
     }, [id])
@@ -29,7 +29,7 @@ const Register = () => {
             img: activity?.img
         }
         // console.log(volunteer)
-        const { data } = await axios.post('http://localhost:5000/registered', volunteer)
+        const { data } = await axios.post('https://polar-taiga-58626.herokuapp.com/registered', volunteer)
         console.log(data)
         if (data) {
             toast.success("Successfully registered for", activity.title)

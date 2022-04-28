@@ -6,6 +6,7 @@ import { useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import { useLocation, useNavigate } from 'react-router-dom';
 import Loading from '../Loading/Loading';
 import { toast } from 'react-toastify';
+import axios from 'axios';
 
 const Login = () => {
     const navigate = useNavigate();
@@ -17,7 +18,17 @@ const Login = () => {
 
     useEffect(() => {
         if (user) {
-            navigate(from, { replace: true });
+            const email = user?.user?.email;
+            if (email) {
+                (async () => {
+                    const { data } = await axios.post('https://polar-taiga-58626.herokuapp.com/login', { email })
+                    // console.log(data)
+                    localStorage.setItem("accessToken", data.token)
+                    if (data) {
+                        navigate(from, { replace: true });
+                    }
+                })()
+            }
         }
     }, [user, navigate, from])
 

@@ -7,7 +7,7 @@ const Activities = () => {
     const [activities, setActivities] = useState([])
     useEffect(() => {
         (async () => {
-            const { data } = await axios.get('http://localhost:5000/activities')
+            const { data } = await axios.get('https://polar-taiga-58626.herokuapp.com/activities')
             if (!data.success) return toast.error(data.error)
             setActivities(data.data)
         })()

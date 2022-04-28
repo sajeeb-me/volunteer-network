@@ -14,7 +14,7 @@ const Admin = () => {
             img: e.target.img.value,
         }
         // console.log(activity)
-        const { data } = await axios.post('http://localhost:5000/activities', activity)
+        const { data } = await axios.post('https://polar-taiga-58626.herokuapp.com/activities', activity)
         console.log(data)
         if (data) {
             toast.success("Successfully added", activity.title)
